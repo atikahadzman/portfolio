@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export default function Banner() {
-    const urlEmail = import.meta.env.URL_EMAIL;
-    const appName = import.meta.env.APP_NAME;
+    const urlEmail = import.meta.env.VITE_URL_EMAIL;
+    const appName = import.meta.env.VITE_APP_NAME;
 
     return (
         <div className="flex flex-col md:flex-row gap-8 p-4 items-center">

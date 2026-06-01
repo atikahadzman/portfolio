@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { HiHome } from "react-icons/hi";   
 
 export default function Navbar() {
-    const urlLinkedin = import.meta.env.URL_LINKEDIN;
-    const urlGithub = import.meta.env.URL_GITHUB;
-    const appName = import.meta.env.APP_NAME;
+    const urlLinkedin = import.meta.env.VITE_URL_LINKEDIN;
+    const urlGithub = import.meta.env.VITE_URL_GITHUB;
+    const appName = import.meta.env.VITE_APP_NAME;
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("home");
 
