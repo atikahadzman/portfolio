@@ -53,7 +53,8 @@ export default function About() {
 
             <div className="flex flex-col gap-1 text-center md:text-left">
                 <p className="text-white mb-6 mt-6 text-sm md:text-base font-poppins">
-                    I am a Software Developer at IWS Intelligent Workflow Solution, where I work on adding new modules, bug fixing using 
+                    I am a Software Developer at IWS Intelligent Workflow Solution, where I work on adding new modules, bug fixing 
+                    for both backend and front side using 
                     <span className="text-[#12AFEA] font-bold"> Linux via WSL</span> and 
                     <span className="text-[#12AFEA] font-bold"> Docker</span> environment.
                     Sometime, I work with integrating payment method too.
