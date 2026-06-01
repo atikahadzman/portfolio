@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './layout/Navbar';
+import About from './About';
 import Banner from './Banner';
 import Experiences from './Experiences';
 
@@ -12,11 +13,15 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-        <main className="flex-1 flex items-center justify-center">
+        <main className="flex-1 flex items-center justify-center mb-10">
             <Banner />
         </main>
 
-        <main className="flex-1 flex items-center justify-center">
+        <main className="flex-1 flex items-center justify-center mb-10">
+            <About />
+        </main>
+        
+        <main className="flex-1 flex items-center justify-center mb-10">
             <Experiences />
         </main>
     </div>
