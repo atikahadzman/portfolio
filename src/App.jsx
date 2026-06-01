@@ -12,11 +12,11 @@ import Footer from './Footer';
 
 function App() {
     // disable right click
-    // useEffect(() => {
-    //     const disable = (e) => e.preventDefault();
-    //     document.addEventListener("contextmenu", disable);
-    //     return () => document.removeEventListener("contextmenu", disable);
-    // }, []);
+    useEffect(() => {
+        const disable = (e) => e.preventDefault();
+        document.addEventListener("contextmenu", disable);
+        return () => document.removeEventListener("contextmenu", disable);
+    }, []);
 
     return (
         <div className="min-h-screen flex flex-col">
