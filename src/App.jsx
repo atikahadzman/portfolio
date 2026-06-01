@@ -7,23 +7,35 @@ import Navbar from './layout/Navbar';
 import About from './About';
 import Banner from './Banner';
 import Experiences from './Experiences';
+import Projects from './Projects';
+import Footer from './Footer';
 
 function App() {
-  return (
+    return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+        <Navbar />
 
-        <main className="flex-1 flex items-center justify-center mb-10">
-            <Banner />
+        <main className="flex-1">
+            <section className="mb-20">
+                <Banner />
+            </section>
+
+            <section className="mb-20">
+                <About />
+            </section>
+
+            <section className="mb-20">
+                <Experiences />
+            </section>
+
+            <section className="mb-20">
+                <Projects />
+            </section>
         </main>
 
-        <main className="flex-1 flex items-center justify-center mb-10">
-            <About />
-        </main>
-        
-        <main className="flex-1 flex items-center justify-center mb-10">
-            <Experiences />
-        </main>
+        <footer className="mt-5 mb-10">
+            <Footer />
+        </footer>
     </div>
   );
 }
