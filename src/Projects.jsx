@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import { HiArrowRight, HiAtSymbol, HiOutlineMinusSm, HiOutlineChevronRight } from "react-icons/hi"; 
 
 export default function Projects() {
+    const urlLinkedin = import.meta.env.URL_LINKEDIN;
+    const urlGithub = import.meta.env.URL_GITHUB;
+    const urlProjectOne = import.meta.env.URL_EBOOK_APP;
+    const urlProjectTwo = import.meta.env.URL_PORFOLIO_APP;
+
     const projects = [
         {
             id: "1",
-            url: "https://github.com/atikahadzman/myapp",
+            url: urlProjectOne,
             title: "Track reading ebook progress",
             image: "/ebook.PNG", 
             badges: (
@@ -20,7 +25,7 @@ export default function Projects() {
         },
         {
             id: "2",
-            url: "https://github.com/atikahadzman/portfolio.git",
+            url: urlProjectTwo,
             title: "Portfolio",
             image: "/portfolio.PNG",
             badges: (
