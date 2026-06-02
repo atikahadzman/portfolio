@@ -23,10 +23,10 @@ export default function Banner() {
                 </h1>
 
                 <p className="text-white mb-6 mt-6 text-sm md:text-base font-poppins pt-4">
-                    Software Developer with 5+ years of experience building and maintaining scalable web
-                    applications using PHP, JavaScript, and MySQL. Proven track record developing RESTful APIs, integrating
-                    third-party services and payment gateways, and delivering full-stack solutions on time in fast-paced
-                    environments.
+                    I've been wrangling code for 6+ years — mostly PHP (yes, by choice 🙃). I build web apps
+                    that actually scale, REST APIs that don't REST too much, and somehow always manage to ship
+                    on time even when the deadline was "yesterday". I've integrated enough third-party services
+                    and payment gateways to know that their docs are always lying.
                 </p>
 
                 <div className="flex items-center justify-center md:justify-start gap-2 pt-4">
