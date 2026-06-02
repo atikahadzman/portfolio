@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { HiAtSymbol, HiOutlineMinusSm, HiOutlineChevronRight } from "react-icons/hi"; 
 
 export default function Experiences() {
-    const [activeTab, setActiveTab] = useState("profile");
+    const [activeTab, setActiveTab] = useState("1");
     const tabs = [
         {
             id: "1",
@@ -26,49 +26,49 @@ export default function Experiences() {
                     <div className="space-y-4 text-left">
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Built, maintained, and enhanced a high-traffic production trading platform across both frontend and backend.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Worked extensively on existing codebases to debug, refactor, and improve performance and stability.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Developed and optimized RESTful APIs and backend modules using PHP MVC frameworks.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Wrote and optimized MySQL queries including complex joins to support reporting and business logic.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Integrated third-party services and payment gateways (Pyrocharge), ensuring secure and reliable transaction flows.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Collaborated with cross-functional teams and external vendors for testing (SIT/UAT), deployments, and post-release support.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Applied secure development practices across all modules to meet performance and security standards.
                             </p>
                         </div>
@@ -98,21 +98,21 @@ export default function Experiences() {
                     <div className="space-y-4 text-left">
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Developed and maintained web applications using PHP and MySQL, building system modules from requirement to deployment.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Wrote MySQL queries and managed relational database structures, hosting environments, and backups.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Ensured consistent delivery quality through hands-on testing and close collaboration with end users
                             </p>
                         </div>
@@ -142,21 +142,21 @@ export default function Experiences() {
                     <div className="space-y-4 text-left">
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Developed and maintained e-commerce platforms using PHP, WordPress, and WooCommerce on live production environments.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Managed MySQL databases, server configurations, domain management, and system integrations (SiteGiant marketplace).
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Handled inventory system workflows and third-party SMS integrations to support business operations.
                             </p>
                         </div>
@@ -186,14 +186,14 @@ export default function Experiences() {
                     <div className="space-y-4 text-left">
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Built RESTful APIs (full CRUD) and Single Page Applications using Angular 4 and SASS.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Implemented secure API communication using HTTP Interceptors and Google OAuth authentication.
                             </p>
                         </div>
@@ -223,14 +223,14 @@ export default function Experiences() {
                     <div className="space-y-4 text-left">
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Developed internal web systems (e-File, e-Stock) using PHP, JavaScript, and CSS to streamline government administrative workflows.
                             </p>
                         </div>
 
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body leading-relaxed">
+                            <p className="text-body text-white leading-relaxed">
                                 Improved data handling and process efficiency, contributing to a cleaner and more maintainable codebase.
                             </p>
                         </div>
