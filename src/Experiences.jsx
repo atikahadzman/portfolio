@@ -48,13 +48,6 @@ export default function Experiences() {
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
                             <p className="text-body text-white leading-relaxed">
-                                Wrote and optimized MySQL queries including complex joins to support reporting and business logic.
-                            </p>
-                        </div>
-
-                        <div className="flex gap-3 items-start">
-                            <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body text-white leading-relaxed">
                                 Integrated third-party services and payment gateways (Pyrocharge), ensuring secure and reliable transaction flows.
                             </p>
                         </div>
@@ -63,13 +56,6 @@ export default function Experiences() {
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
                             <p className="text-body text-white leading-relaxed">
                                 Collaborated with cross-functional teams and external vendors for testing (SIT/UAT), deployments, and post-release support.
-                            </p>
-                        </div>
-
-                        <div className="flex gap-3 items-start">
-                            <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
-                            <p className="text-body text-white leading-relaxed">
-                                Applied secure development practices across all modules to meet performance and security standards.
                             </p>
                         </div>
                     </div>
