@@ -27,7 +27,7 @@ export default function Experiences() {
                         <div className="flex gap-3 items-start">
                             <HiOutlineChevronRight className="w-10 h-6 text-[#B7431A]" />
                             <p className="text-body text-white leading-relaxed">
-                                Built, maintained, and enhanced a high-traffic production trading platform across both frontend and backend.
+                                Maintained and enhanced a high-traffic production trading platform across both frontend and backend.
                             </p>
                         </div>
 
