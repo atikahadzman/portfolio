@@ -11,7 +11,7 @@ export default function Banner() {
             {/* avatar */}
             <div className="shrink-0">
                 <img
-                    src="/avatar-1.jpg"
+                    src="/avatar.png"
                     alt="It's Me!"
                     className="h-48 w-36 md:h-80 md:w-64 rounded-4xl object-cover"
                     loading="lazy"

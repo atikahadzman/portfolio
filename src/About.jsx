@@ -51,7 +51,7 @@ export default function About() {
                 <div className="w-24 md:w-48 lg:flex-1 h-px bg-white/20" />
             </div>
 
-            <div className="flex flex-col gap-1 text-center md:text-left">
+            <div>
                 <p className="text-white mb-6 mt-6 text-sm md:text-base font-poppins">
                     I am a Software Developer at IWS Intelligent Workflow Solution, where I work on adding new modules, bug fixing 
                     for both backend and front side using 
@@ -59,44 +59,51 @@ export default function About() {
                     <span className="text-[#12AFEA] font-bold"> Docker</span> environment.
                     Sometime, I work with integrating payment method too.
                 </p>
-                <p className="text-white text-left mb-6 mt-6 text-sm md:text-base font-poppins">
-                    Here are some languages I have been working with:
-                </p>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6 md:items-start">
+                <div className="flex flex-col gap-1 text-center md:text-left md:flex-1">
+                    <p className="text-white text-left mb-6 mt-6 text-sm md:text-base font-poppins">
+                        Here are some languages I have been working with:
+                    </p>
 
-                {/* language */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {Object.values(languageLabels).map((label, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-secondary text-white group"
-                        >
-                            <HiOutlineChevronRight className="w-4 h-4 text-[#B7431A] group-hover:translate-x-1 transition-transform" />
+                    {/* language */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {Object.values(languageLabels).map((label, index) => (
+                            <div
+                                key={index}
+                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-secondary text-white group"
+                            >
+                                <HiOutlineChevronRight className="w-4 h-4 text-[#B7431A] group-hover:translate-x-1 transition-transform" />
+                                <span className="text-sm">{label}</span>
+                            </div>
+                        ))}
+                    </div>
 
-                            <span className="text-sm">
-                                {label}
-                            </span>
-                        </div>
-                    ))}
+                    <p className="text-white text-left mb-6 mt-6 text-sm md:text-base font-poppins">
+                        Here are some technologies I have been working with:
+                    </p>
+
+                    {/* framework */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {Object.values(frameworkLabels).map((label, index) => (
+                            <div
+                                key={index}
+                                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-secondary text-white group"
+                            >
+                                <HiOutlineChevronRight className="w-4 h-4 text-[#B7431A] group-hover:translate-x-1 transition-transform" />
+                                <span className="text-sm">{label}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                <p className="text-white text-left mb-6 mt-6 text-sm md:text-base font-poppins">
-                    Here are some technologies I have been working with:
-                </p>
-
-                {/* framework */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {Object.values(frameworkLabels).map((label, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-secondary text-white group"
-                        >
-                            <HiOutlineChevronRight className="w-4 h-4 text-[#B7431A] group-hover:translate-x-1 transition-transform" />
-
-                            <span className="text-sm">
-                                {label}
-                            </span>
-                        </div>
-                    ))}
+                <div className="flex justify-center md:justify-end shrink-0">
+                    <img
+                        src="/about.jpg"
+                        alt="It's Me!"
+                        className="h-100 w-full md:h-80 md:w-full object-cover rounded-lg"
+                        loading="lazy"
+                    />
                 </div>
             </div>
         </div>
