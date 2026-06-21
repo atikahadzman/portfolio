@@ -19,7 +19,7 @@ export default function About() {
         4: "React",
         5: "Bootstrap",
         6: "Angular",
-        6: "Wordpress",
+        7: "Wordpress",
     };
 
     const databaseLabels = {
