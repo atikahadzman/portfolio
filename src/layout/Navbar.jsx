@@ -82,7 +82,7 @@ export default function Navbar() {
                     >
                         <img
                             src="/github-icon.png"
-                            alt="It's Me!"
+                            alt="Github"
                             className="h-5 w-5 md:h-5 md:w-5"
                             loading="lazy"
                         />
@@ -95,7 +95,7 @@ export default function Navbar() {
                     >
                         <img
                             src="/linkedin-icon.png"
-                            alt="It's Me!"
+                            alt="Linkedin"
                             className="h-5 w-5 md:h-5 md:w-5"
                             loading="lazy"
                         />
