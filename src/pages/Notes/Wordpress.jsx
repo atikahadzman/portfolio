@@ -10,7 +10,7 @@ const Wordpress = () => {
         <div className="max-w-7xl mx-auto">
             {/* back button */}
             <button
-                onClick={() => navigate(-1)}
+                onClick={() => navigate("/notes")}
                 className="flex items-center gap-2 text-lg text-blue-400 hover:text-white transition mb-6"
             >
                 <HiArrowLeft size={18} />
