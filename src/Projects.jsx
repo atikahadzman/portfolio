@@ -10,6 +10,7 @@ export default function Projects() {
         ebook: import.meta.env.VITE_URL_EBOOK_APP,
         chart: import.meta.env.VITE_URL_CHART_APP,
         portfolio: import.meta.env.VITE_URL_PORFOLIO_APP,
+        chartApi: import.meta.env.VITE_URL_CHART_API_APP,
     };
 
     const projectList = [
@@ -52,7 +53,22 @@ export default function Projects() {
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-cyan-400 text-cyan-900">CSS</div>
                 </>
             ),
-            content: "An Angular project to display charts and table. Builded using Angular, HTML and CSS."
+            content: (
+            <>
+                An Angular project to display charts and table. Built using Angular, HTML and CSS.
+                {' '}
+                <a
+                    href={projectUrls.chartApi}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800"
+                >
+                Refer here
+                </a>
+                {' '}
+                for the backend of this app.
+            </>
+            )
         },
         {
             url: projectUrls.portfolio,
