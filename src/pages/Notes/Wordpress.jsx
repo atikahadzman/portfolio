@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { HiArrowLeft, HiStar, HiOutlineStar } from "react-icons/hi"; 
 import List from "./List";
 
