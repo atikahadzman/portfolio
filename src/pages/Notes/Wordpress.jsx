@@ -1,9 +1,11 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { HiArrowLeft, HiStar, HiOutlineStar } from "react-icons/hi"; 
 import List from "./List";
 
 const Wordpress = () => {
     const title = "Install Wordpress in WSL Ubuntu";
+    const navigate = useNavigate();
 
     return (
     <div className="bg-[#0F172A] min-h-screen py-12 px-4 sm:px-6 lg:px-8 font-sans text-white">
