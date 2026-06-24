@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -9,6 +10,29 @@ import Banner from './Banner';
 import Experiences from './Experiences';
 import Projects from './Projects';
 import Footer from './Footer';
+import Notes from "./pages/Notes";
+
+function Home() {
+    return (
+        <>
+            <section id="home" className="mb-20">
+                <Banner />
+            </section>
+
+            <section id="about" className="mb-20">
+                <About />
+            </section>
+
+            <section id="experiences" className="mb-20">
+                <Experiences />
+            </section>
+
+            <section id="projects" className="mb-20">
+                <Projects />
+            </section>
+        </>
+    );
+}
 
 function App() {
     // disable right click
@@ -23,28 +47,17 @@ function App() {
             <Navbar />
 
             <main className="flex-1 pt-20">
-                <section id="home" className="mb-20">
-                    <Banner />
-                </section>
-
-                <section id="about" className="mb-20">
-                    <About />
-                </section>
-
-                <section id="experiences" className="mb-20">
-                    <Experiences />
-                </section>
-
-                <section id="projects" className="mb-20">
-                    <Projects />
-                </section>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/notes" element={<Notes />} />
+                </Routes>
             </main>
 
             <footer className="mt-5 mb-10">
                 <Footer />
             </footer>
         </div>
-  );
+    );
 }
 
 export default App;

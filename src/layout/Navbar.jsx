@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { HiHome } from "react-icons/hi";   
 
 export default function Navbar() {
@@ -7,6 +8,7 @@ export default function Navbar() {
     const appName = import.meta.env.VITE_APP_NAME;
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("home");
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,6 +44,7 @@ export default function Navbar() {
         { label: "About", id: "about" },
         { label: "Experiences", id: "experiences" },
         { label: "Projects", id: "projects" },
+        { label: "Notes", id: "notes" },
     ];
 
     return (
@@ -49,7 +52,7 @@ export default function Navbar() {
             scrolled ? "bg-black/10 backdrop-blur-md shadow-lg" : "bg-transparent"
         }`}>
             <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-start gap-8">
-                <button onClick={() => scrollTo("home")} className="flex items-center gap-2 group">
+                <button onClick={() => navigate("/")} className="flex items-center gap-2 group">
                     <span className="font-bold text-white text-lg tracking-wide group-hover:opacity-80 transition-opacity">
                         {appName}
                     </span>
@@ -58,18 +61,34 @@ export default function Navbar() {
                 <ul className="flex items-center gap-1">
                     {links.map(({ label, id }) => (
                         <li key={id}>
-                            <button
-                                onClick={() => scrollTo(id)}
-                                className={`px-4 py-2 text-sm font-medium transition-all duration-200 relative
-                                    after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-white
-                                    after:transition-all after:duration-200
-                                    ${active === id
-                                        ? "text-white after:w-full"
-                                        : "text-white/70 hover:text-white after:w-0 hover:after:w-full"
-                                    }`}
-                            >
-                                {label}
-                            </button>
+                            {id === "notes" ? (
+                                <button
+                                    onClick={() => navigate("/notes")}
+                                    className={`px-4 py-2 text-sm font-medium transition-all duration-200 relative
+                                        after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-white
+                                        after:transition-all after:duration-200
+                                        ${
+                                            active === id
+                                                ? "text-white after:w-full"
+                                                : "text-white/70 hover:text-white after:w-0 hover:after:w-full"
+                                        }`}
+                                >
+                                    {label}
+                                </button>
+                            ) : (
+                                <button
+                                    onClick={() => scrollTo(id)}
+                                    className={`px-4 py-2 text-sm font-medium transition-all duration-200 relative
+                                        after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-white
+                                        after:transition-all after:duration-200
+                                        ${active === id
+                                            ? "text-white after:w-full"
+                                            : "text-white/70 hover:text-white after:w-0 hover:after:w-full"
+                                        }`}
+                                >
+                                    {label}
+                                </button>
+                            )}
                         </li>
                     ))}
                 </ul>
