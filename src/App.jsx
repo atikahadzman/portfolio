@@ -11,6 +11,7 @@ import Experiences from './Experiences';
 import Projects from './Projects';
 import Footer from './Footer';
 import Notes from "./pages/Notes";
+import Wordpress from "./pages/Notes/Wordpress";
 
 function Home() {
     return (
@@ -50,6 +51,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/notes" element={<Notes />} />
+                    <Route path="/wordpress" element={<Wordpress />}/>
                 </Routes>
             </main>
 
