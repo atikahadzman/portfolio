@@ -11,9 +11,24 @@ export default function Projects() {
         chart: import.meta.env.VITE_URL_CHART_APP,
         portfolio: import.meta.env.VITE_URL_PORFOLIO_APP,
         chartApi: import.meta.env.VITE_URL_CHART_API_APP,
+        ecommerceWeb: import.meta.env.VITE_URL_ECOMMERCE_WEB,
     };
 
     const projectList = [
+        {
+            url: projectUrls.ecommerceWeb,
+            title: "Wordpress E-commerce website using WooCommerce",
+            image: "/e-commerce.PNG",
+            badges: (
+                <>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Wordpress</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">WooCommerce</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">MySQL</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">Adobe Illustrator</div>
+                </>
+            ),
+            content: "A responsive skincare e-commerce website built with WordPress and WooCommerce, featuring custom-designed and edited visuals created in Adobe Illustrator."
+        },
         {
             url: projectUrls.electron,
             title: "Electron application using PouchDb",
