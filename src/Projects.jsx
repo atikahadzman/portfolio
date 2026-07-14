@@ -66,11 +66,13 @@ export default function Projects() {
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Angular</div>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">HTML</div>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-cyan-400 text-cyan-900">CSS</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">MySQL</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Node.js</div>
                 </>
             ),
             content: (
             <>
-                An Angular project to display charts and table. Built using Angular, HTML and CSS.
+                A responsive dashboard application using Angular for the frontend and Node.js for the backend, featuring interactive charts, tabular data, and RESTful API integration.
                 {' '}
                 <a
                     href={projectUrls.chartApi}
