@@ -16,34 +16,6 @@ export default function Projects() {
 
     const projectList = [
         {
-            url: projectUrls.ecommerceWeb,
-            title: "Wordpress E-commerce website using WooCommerce",
-            image: "/e-commerce.PNG",
-            badges: (
-                <>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Wordpress</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">WooCommerce</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">MySQL</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">Adobe Illustrator</div>
-                </>
-            ),
-            content: "A responsive skincare e-commerce website built with WordPress and WooCommerce, featuring custom-designed and edited visuals created in Adobe Illustrator."
-        },
-        {
-            url: projectUrls.electron,
-            title: "Electron application using PouchDb",
-            image: "/electron-chart.PNG",
-            badges: (
-                <>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Electron</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">PouchDb</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">HTML</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-cyan-400 text-cyan-900">CSS</div>
-                </>
-            ),
-            content: "An Electron application that uses PouchDB for data validation and displays charts and tables. Built with Electron, PouchDB, HTML, and CSS."
-        },
-        {
             url: projectUrls.ebook,
             title: "Ebook App",
             image: "/ebook.PNG",
@@ -86,6 +58,34 @@ export default function Projects() {
                 for the backend of this app.
             </>
             )
+        },
+        {
+            url: projectUrls.electron,
+            title: "Electron application using PouchDb",
+            image: "/electron-chart.PNG",
+            badges: (
+                <>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Electron</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">PouchDb</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">HTML</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-cyan-400 text-cyan-900">CSS</div>
+                </>
+            ),
+            content: "An Electron application that uses PouchDB for data validation and displays charts and tables. Built with Electron, PouchDB, HTML, and CSS."
+        },
+        {
+            url: projectUrls.ecommerceWeb,
+            title: "Wordpress E-commerce website using WooCommerce",
+            image: "/e-commerce.PNG",
+            badges: (
+                <>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Wordpress</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">WooCommerce</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">MySQL</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">Adobe Illustrator</div>
+                </>
+            ),
+            content: "A responsive skincare e-commerce website built with WordPress and WooCommerce, featuring custom-designed and edited visuals created in Adobe Illustrator."
         },
         {
             url: projectUrls.portfolio,
