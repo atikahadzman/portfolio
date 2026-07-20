@@ -12,9 +12,22 @@ export default function Projects() {
         portfolio: import.meta.env.VITE_URL_PORFOLIO_APP,
         chartApi: import.meta.env.VITE_URL_CHART_API_APP,
         ecommerceWeb: import.meta.env.VITE_URL_ECOMMERCE_WEB,
+        patientManagement: import.meta.env.VITE_URL_PATIENT_MANAGEMENT_APP,
     };
 
     const projectList = [
+        {
+            url: projectUrls.patientManagement,
+            title: "Patient Management",
+            image: "/patient-management.PNG",
+             badges: (
+                <>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">React</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">Tailwind.css</div>
+                </>
+            ),
+            content: "A responsive UI for patient management system. Builded using React + Vite and Tailwind."
+        },
         {
             url: projectUrls.ebook,
             title: "Ebook App",
