@@ -20,11 +20,11 @@ export default function Banner() {
 
             {/* description */}
             <div className="flex flex-col gap-1 text-center md:text-left">
-                <h1 className="text-3xl md:text-5xl font-poppins font-bold">
+                <h1 className="text-3xl md:text-5xl font-mono font-bold">
                     Hi there, <span className="text-[#12AFEA]">{appName}</span> here
                 </h1>
 
-                <p className="text-white mb-6 mt-6 text-sm md:text-base font-poppins pt-4">
+                <p className="font-mono text-white mb-6 mt-6 text-sm md:text-base pt-4">
                     I've been wrangling code for 6+ years — mostly PHP (yes, by choice 🙃). I build web apps
                     that actually scale, REST APIs that don't REST too much, and somehow always manage to ship
                     on time even when the deadline was "yesterday". I've integrated enough third-party services
@@ -33,7 +33,7 @@ export default function Banner() {
 
                 <div className="flex items-center justify-center md:justify-start gap-2 pt-4">
                     <a href={urlEmail}
-                        className="font-poppins border-2 border-white text-white px-6 py-3 hover:bg-white hover:text-blue-600 transition"
+                        className="font-mono border-2 border-white text-white px-6 py-3 hover:bg-white hover:text-blue-600 transition"
                     >
                         Send Email
                     </a>

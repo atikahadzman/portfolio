@@ -9,7 +9,7 @@ export default function Experiences() {
             title: "IWS Intelligent",
             content: (
                 <>
-                    <h3 className="flex items-center gap-2 text-lg font-semibold mb-0">
+                    <h3 className="flex items-center gap-2 text-lg font-mono font-semibold mb-0">
                         <span className="text-white">
                             Software Developer
                         </span>
@@ -19,7 +19,7 @@ export default function Experiences() {
                         </span>
                     </h3>
 
-                    <span className="flex items-center mb-4">
+                    <span className="flex items-center mb-4 font-mono">
                         April 2021 <HiOutlineMinusSm size={24} color="#fff"/> present
                     </span>
 
@@ -67,7 +67,7 @@ export default function Experiences() {
             title: "Uniutama Solution",
             content: (
                 <>
-                    <h3 className="flex items-center gap-2 text-lg font-semibold mb-0">
+                    <h3 className="flex items-center gap-2 text-lg font-mono font-semibold mb-0">
                         <span className="text-white">
                             Programmer
                         </span>
@@ -77,7 +77,7 @@ export default function Experiences() {
                         </span>
                     </h3>
 
-                    <span className="flex items-center mb-4">
+                    <span className="flex items-center mb-4 font-mono">
                         Dec 2019 <HiOutlineMinusSm size={24} color="#fff"/> April 2021 
                     </span>
 
@@ -111,7 +111,7 @@ export default function Experiences() {
             title: "MOS Neutraceutical",
             content: (
                 <>
-                    <h3 className="flex items-center gap-2 text-lg font-semibold mb-0">
+                    <h3 className="flex items-center gap-2 text-lg font-mono font-semibold mb-0">
                         <span className="text-white">
                             System Admin/Programmer 
                         </span>
@@ -121,7 +121,7 @@ export default function Experiences() {
                         </span>
                     </h3>
 
-                    <span className="flex items-center mb-4">
+                    <span className="flex items-center mb-4 font-mono">
                         Jan 2018 <HiOutlineMinusSm size={24} color="#fff"/> Dec 2019
                     </span>
 
@@ -155,7 +155,7 @@ export default function Experiences() {
             title: "MIMOS Berhad",
             content: (
                 <>
-                    <h3 className="flex items-center gap-2 text-lg font-semibold mb-0">
+                    <h3 className="flex items-center gap-2 text-lg font-mono font-semibold mb-0">
                         <span className="text-white">
                             Web Developer (SL1M Programme) 
                         </span>
@@ -165,7 +165,7 @@ export default function Experiences() {
                         </span>
                     </h3>
 
-                    <span className="flex items-center mb-4">
+                    <span className="flex items-center mb-4 font-mono">
                         May 2017 <HiOutlineMinusSm size={24} color="#fff"/> Nov 2017
                     </span>
 
@@ -192,7 +192,7 @@ export default function Experiences() {
             title: "PTJM",
             content: (
                 <>
-                    <h3 className="flex items-center gap-2 text-lg font-semibold mb-0">
+                    <h3 className="flex items-center gap-2 text-lg font-mono font-semibold mb-0">
                         <span className="text-white">
                             Junior Programmer (Internship)
                         </span>
@@ -202,7 +202,7 @@ export default function Experiences() {
                         </span>
                     </h3>
 
-                    <span className="flex items-center mb-4">
+                    <span className="flex items-center mb-4 font-mono">
                         Feb 2016 <HiOutlineMinusSm size={24} color="#fff"/> July 2016
                     </span>
 
@@ -234,7 +234,7 @@ export default function Experiences() {
         <div className="flex flex-col gap-8 p-4 w-full">
             {/* title */}
             <div className="flex items-center gap-4">
-                <h1 className="font-poppins font-bold">
+                <h1 className="font-mono font-bold">
                     Experiences
                 </h1>
 
@@ -245,7 +245,7 @@ export default function Experiences() {
             <div className="md:flex gap-8">
                 <ul className="flex flex-col gap-3 md:w-64">
                     {tabs.map((tab) => (
-                        <li key={tab.id} className="font-poppins hover:bg-white/5 hover:translate-x-1 transition-all duration-200">
+                        <li key={tab.id} className="font-mono hover:bg-white/5 hover:translate-x-1 transition-all duration-200">
                             <button
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 relative group overflow-hidden ${

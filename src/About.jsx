@@ -44,7 +44,7 @@ export default function About() {
         <div className="flex flex-col gap-8 p-4 w-full">
             {/* title */}
             <div className="flex items-center gap-4">
-                <h1 className="font-poppins font-bold">
+                <h1 className="font-mono font-bold">
                     About me
                 </h1>
 
@@ -52,7 +52,7 @@ export default function About() {
             </div>
 
             <div>
-                <p className="text-white mb-6 mt-6 text-sm md:text-base font-poppins">
+                <p className="font-mono text-white mb-6 mt-6 text-sm md:text-base">
                     I am a Software Developer at IWS Intelligent Workflow Solution, where I work on adding new modules, bug fixing 
                     for both backend and front side using 
                     <span className="text-[#12AFEA] font-bold"> Linux via WSL</span> and 
@@ -62,7 +62,7 @@ export default function About() {
             </div>
             <div className="flex flex-col md:flex-row gap-6 md:items-start">
                 <div className="flex flex-col gap-1 text-center md:text-left md:flex-1">
-                    <p className="text-white text-left mb-6 mt-6 text-sm md:text-base font-poppins">
+                    <p className="font-mono text-white text-left mb-6 mt-6 text-sm md:text-base">
                         Here are some languages I have been working with:
                     </p>
 
@@ -79,7 +79,7 @@ export default function About() {
                         ))}
                     </div>
 
-                    <p className="text-white text-left mb-6 mt-6 text-sm md:text-base font-poppins">
+                    <p className="font-mono text-white text-left mb-6 mt-6 text-sm md:text-base">
                         Here are some technologies I have been working with:
                     </p>
 

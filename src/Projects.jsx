@@ -123,7 +123,7 @@ export default function Projects() {
         <div className="flex flex-col gap-8 p-4 w-full">
             {/* title */}
             <div className="flex items-center gap-4">
-                <h1 className="font-poppins font-bold">
+                <h1 className="font-mono font-bold">
                     Recent Projects
                 </h1>
                 <div className="w-24 md:w-48 lg:flex-1 h-px bg-white/20" />
@@ -158,11 +158,11 @@ export default function Projects() {
                             <div>
                                 <div className="flex flex-col items-center gap-y-2 md:flex-row">
                                     <a className="hover:text-cyan-400" href={item.url}>
-                                        <div className="text-xl font-semibold text-white hover:translate-x-1 transition-transform mb-2">
+                                        <div className="font-mono text-xl font-semibold text-white hover:translate-x-1 transition-transform mb-2">
                                             {item.title}
                                         </div>
                                     </a>
-                                    <div className="ml-3 flex flex-wrap gap-2">
+                                    <div className="font-mono ml-3 flex flex-wrap gap-2">
                                         {item.badges}
                                     </div>
                                 </div>
