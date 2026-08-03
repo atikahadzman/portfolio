@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { HiArrowRight, HiAtSymbol, HiOutlineMinusSm, HiOutlineChevronRight } from "react-icons/hi"; 
+import ScreenshotProjects from './ScreenshotProjects';
 
 export default function Projects() {
     const urlLinkedin = import.meta.env.VITE_URL_LINKEDIN;
     const urlGithub = import.meta.env.VITE_URL_GITHUB;
+    const [currentPage, setCurrentPage] = useState(1);
 
     const projectUrls = {
         electron: import.meta.env.VITE_URL_ELECTRON_APP,
@@ -50,8 +52,8 @@ export default function Projects() {
                 <>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Angular</div>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">HTML</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-cyan-400 text-cyan-900">CSS</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">MySQL</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">CSS</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">MySQL</div>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Node.js</div>
                 </>
             ),
@@ -81,7 +83,7 @@ export default function Projects() {
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">Electron</div>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">PouchDb</div>
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">HTML</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-cyan-400 text-cyan-900">CSS</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">CSS</div>
                 </>
             ),
             content: "An Electron application that uses PouchDB for data validation and displays charts and tables. Built with Electron, PouchDB, HTML, and CSS."
@@ -106,8 +108,8 @@ export default function Projects() {
             image: "/portfolio.PNG",
             badges: (
                 <>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">React</div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">Tailwind.css</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">React</div>
+                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">Tailwind.css</div>
                 </>
             ),
             content: "A landing page for porfolio. Builded using React and Tailwind."
@@ -119,6 +121,13 @@ export default function Projects() {
         ...p
     }));
 
+    const itemPerPage = 3;
+    const totalPages = Math.ceil(projects.length / itemPerPage);
+    const currentProjects = projects.slice(
+        (currentPage - 1) * itemPerPage,
+        currentPage * itemPerPage
+    );
+
     return (
         <div className="flex flex-col gap-8 p-4 w-full">
             {/* title */}
@@ -129,51 +138,71 @@ export default function Projects() {
                 <div className="w-24 md:w-48 lg:flex-1 h-px bg-white/20" />
             </div>
 
+            <ScreenshotProjects />
+
+            {/* pagination */}
+            <div className="flex justify-end items-start gap-2 mt-8">
+                {Array.from({ length: totalPages }, (_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentPage(index + 1)}
+                        className={`w-10 h-10 rounded-lg transition ${
+                            currentPage === index + 1
+                                ? "bg-cyan-500 text-white"
+                                : "bg-slate-700 text-gray-300 hover:bg-slate-600"
+                        }`}
+                    >
+                        {index + 1}
+                    </button>
+                ))}
+            </div>
+
             {/* list of projects */}
-            <div className="flex flex-col gap-1 text-center md:text-left">
-                {projects.map((item) => (
-                    <div className="flex flex-col gap-6 mb-5 p-2">
-                        <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-                            <div className="shrink-0">
-                                <a href={item.url}>
-                                    {/* mobile */}
-                                    <img 
-                                        src={item.image}
-                                        className="block md:hidden w-full object-cover rounded-2xl hover:translate-x-1 transition-transform" 
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 px-6">
+                {currentProjects.map((item) => (
+                    <div
+                        key={item.id}
+                        className="overflow-hidden rounded-2xl bg-slate-800 shadow-lg hover:shadow-xl transition-all"
+                    >
+                        <div className="p-6">
+                            <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group inline-block"
+                            >
+                                <h2 className="font-mono text-2xl font-bold text-white transition-colors group-hover:text-[#12AFEA]">
+                                    {item.title}
+                                </h2>
+                            </a>
 
-                                    {/* desktop */}
-                                    <img 
-                                        src={item.image}
-                                        className="hidden md:block w-50 h-64 object-cover rounded-2xl p-2 hover:translate-x-1 transition-transform"
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-
-                                </a>
+                            <div className="mt-3 flex flex-wrap gap-2 justify-center items-center">
+                                {item.badges}
                             </div>
 
-                            <div>
-                                <div className="flex flex-col items-center gap-y-2 md:flex-row">
-                                    <a className="hover:text-cyan-400" href={item.url}>
-                                        <div className="font-mono text-xl font-semibold text-white hover:translate-x-1 transition-transform mb-2">
-                                            {item.title}
-                                        </div>
-                                    </a>
-                                    <div className="font-mono ml-3 flex flex-wrap gap-2">
-                                        {item.badges}
-                                    </div>
-                                </div>
-                                <p className="mt-3 text-white">
-                                    {item.content}
-                                </p>
-                            </div>
-
+                            <p className="mt-5 text-gray-300 leading-7">
+                                {item.content}
+                            </p>
                         </div>
                     </div>
-                 ))}
+                ))}
+            </div>
+
+            {/* pagination */}
+            <div className="flex justify-end items-start gap-2 mt-8">
+                {Array.from({ length: totalPages }, (_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentPage(index + 1)}
+                        className={`w-10 h-10 rounded-lg transition ${
+                            currentPage === index + 1
+                                ? "bg-cyan-500 text-white"
+                                : "bg-slate-700 text-gray-300 hover:bg-slate-600"
+                        }`}
+                    >
+                        {index + 1}
+                    </button>
+                ))}
             </div>
         </div>
     );
