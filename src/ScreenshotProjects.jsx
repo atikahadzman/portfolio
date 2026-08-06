@@ -78,7 +78,7 @@ const ScreenshotProjects = () => {
                     <HiChevronLeft size={24} />
                 </button>
         
-                <div className="relative flex-1 max-w-4xl h-96 overflow-hidden rounded-2xl shadow-lg">
+                <div className="relative flex-1 max-w-full h-full overflow-hidden rounded-xl">
                     <div
                         className="flex w-full h-full transition-transform duration-500 ease-out"
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
